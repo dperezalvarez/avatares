@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Avatares</title>
+</head>
+<body>
+  <h1>Generador de Avatares Personalizados</h1>
+  <form action="/avatar" method="POST">
+    <label for="bgColor">Color de fondo:</label>
+    <input type="color" id="bgColor" name="bgColor"><br><br>
+
+    <label for="eyeColor">Color de ojos:</label>
+    <input type="color" id="eyeColor" name="eyeColor"><br><br>
+
+    <label for="faceShape">Forma de la cara:</label>
+    <select id="faceShape" name="faceShape">
+      <option value="circle">Círculo</option>
+      <option value="square">Cuadrado</option>
+    </select><br><br>
+
+    <button type="submit">Generar Avatar</button>
+  </form>
+</body>
+</html>
